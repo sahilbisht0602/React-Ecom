@@ -30,7 +30,7 @@ const ProductDetailCard = ({
             Add To Cart
           </button>
           <div>
-            <label for="cars">Quantity</label>
+            <label htmlFor="cars">Quantity</label>
 
             <select
               onChange={val}

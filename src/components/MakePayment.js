@@ -36,6 +36,7 @@ const MakePayment = () => {
               quantity={item?.quantity}
               price={item?.price}
               id={item?.id}
+              key={item?.id}
             />
           );
         })}

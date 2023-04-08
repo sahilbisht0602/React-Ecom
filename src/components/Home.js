@@ -47,8 +47,8 @@ const Home = () => {
       <div className="card checkbox-item">
         {categoryArr.map((category, index) => {
           return (
-            <div>
-              <div className="category">
+            <div key={category}>
+              <div className="category" key={category}>
                 <input
                   type="radio"
                   key={index}
@@ -57,7 +57,7 @@ const Home = () => {
                   value={category}
                   onClick={checkBoxValue}
                 />
-                <label for="htmlFor">{category.toUpperCase()}</label>
+                <label htmlFor="category">{category.toUpperCase()}</label>
                 <br />
               </div>
             </div>
@@ -72,7 +72,7 @@ const Home = () => {
         {isLoading && <h1 className="loading">Loading...</h1>}
         {products.map((product) => {
           return (
-            <div>
+            <div key={product.id}>
               <Link to={"productDetail/" + product.id} key={product.id}>
                 <ProductCard key={product.id} {...product} />{" "}
               </Link>

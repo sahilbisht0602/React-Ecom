@@ -186,3 +186,16 @@ span .rating {
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 550px) {
+  .item-container {
+    flex-direction: column;
+  }
+  .productDetail-card {
+    width: 90%;
+    height: 158vh;
+  }
+  .product-main {
+    display: block;
+  }
+}
