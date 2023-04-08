@@ -24,7 +24,7 @@ const CartDetailCard = ({ image, price, quantity, id }) => {
         <div className="cart-info">
           <p>Price for one : {price}</p>
           <p>Total Quantity : {quantity}</p>
-          <p>Total Price : {Math.trunc(price * quantity)}</p>
+          <p>Total Price : {price * quantity}</p>
         </div>
         <button className="btn" onClick={incrementHandler}>
           Add

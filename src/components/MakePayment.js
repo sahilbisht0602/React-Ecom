@@ -26,7 +26,7 @@ const MakePayment = () => {
       <h1 style={{ textAlign: "center", marginTop: "2rem" }}>
         Your Order Is confirmed it will delivered by 15 April, 2023 <br />
         Total Item : {cartQuantity} <br />
-        Total Amount : {Math.trunc(totalPrice)}
+        Total Amount : {totalPrice}
       </h1>
       <div className="cart-container">
         {cartItems.map((item) => {
